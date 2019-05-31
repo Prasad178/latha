@@ -50,7 +50,7 @@ render()
                   this.state.password=="LathaShivaani"?
                 <div>
                 <ImageFile name="LathaShivaani.png"/>
-                <ImageFile name="sample.gif"/>
+                <ImageFile name="LathaShivaani.gif"/>
                 <State/>
                 </div>:null
                 }
@@ -66,7 +66,7 @@ render()
                   this.state.password=="LathaPrasad"?
                 <div>
                 <ImageFile name="LathaPrasad.jpg"/>
-                <ImageFile name="sample.gif"/>
+                <ImageFile name="LathaPrasad.gif"/>
                 <State/>
                 </div>:null
                 }
