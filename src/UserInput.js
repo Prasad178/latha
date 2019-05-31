@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import './UserOutput.css';
 
 const UserInput=(props)=>
 {
@@ -8,11 +9,11 @@ const UserInput=(props)=>
   };
 return(
 
-  <div>
-  <p>  UserName: <input type="text" name="UserName" onChange={props.changed} value={props.name} style={style}/>&nbsp;
-      Password: <input type="text" name="Password" style={style}/>&nbsp;&nbsp;&nbsp;
-      
-      </p>
+  <div className="UserOutput">
+   UserName: <input type="text" name="UserName" onChange={props.changed} value={props.name} style={style}/>&nbsp;
+  Password: <input type="text" name="Password" style={style}/>&nbsp;&nbsp;&nbsp;
+  <button>Login </button>
+
   </div>
 )
 
