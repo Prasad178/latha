@@ -33,18 +33,23 @@ class Blog extends Component {
             placeholder:'Author of the blog'
           },
           value:''
-      }},
-      showLoading:false
+      }}
     }
 
 
 
   blogPostHandler=()=>
   {
-    const blogdata={blog:this.state.blog};
+    const blogdata={};
+
+    for(let formElementIdentifier in this.state.blog )
+    {
+      blogdata[formElementIdentifier]=this.state.blog[formElementIdentifier].value;
+    }
     axios.post('https://blog-prasad.firebaseio.com/blog-prasad.json',blogdata)
             .then(response =>
                     this.setState({blog:response.data}))
+            .error(error=> console.log(error))
   }
   inputChangeHandler=(event,inputIdentifier)=>
   {
@@ -57,16 +62,9 @@ class Blog extends Component {
         updatedblogElement.value=event.target.value;
         updatingblog[inputIdentifier]=updatedblogElement;
         this.setState({blog:updatingblog});
+        console.log("updatedblogElement.value"+updatedblogElement.value);
   }
 
-  getBlogHandler=()=>
-  {
-      axios.get('https://blog-prasad.firebaseio.com/blog-prasad.json')
-            .then(response=>{
-               this.setState({blog:response.data.blog});
-               this.setState({showLoading:true})
-                })
-  }
  render()
  {
     const formelementsArray=[];
@@ -77,20 +75,19 @@ class Blog extends Component {
         config:this.state.blog[key]
       });
     }
-    let formLoad=(<form onSubmit={this.blogPostHandler}>
+    let formLoad=<form>
       {formelementsArray.map(formElement=>
           (<Elements
               id={formElement.id}
+              key={formElement.id}
               elementType={formElement.config.elementType}
               elementConfig={formElement.config.elementConfig}
               value={formElement.config.elementConfig}
               changed={(event)=>this.inputChangeHandler(event,formElement.id)}/>
 
           ))}<br></br>
-    <button className="ButtonLabel">Add Blog</button>
-    <button className="ButtonLabel" onClick={()=>this.getBlogHandler()}>Get Blog</button>
-
-    </form>)
+    <button className="ButtonLabel" onClick={this.blogPostHandler}>Add Blog</button>
+      </form>
 
    return(
       <BrowserRouter>
