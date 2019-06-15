@@ -1,7 +1,7 @@
 import React,{Component} from 'react'
 
 
-export default class States  extends Component
+export default class cockpit  extends Component
 {
 constructor(){
   super();
