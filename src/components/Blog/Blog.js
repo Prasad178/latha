@@ -49,7 +49,7 @@ class Blog extends Component {
     axios.post('https://blog-prasad.firebaseio.com/blog-prasad.json',blogdata)
             .then(response =>
                     this.setState({blog:response.data}))
-            .error(error=> console.log(error))
+      
   }
   inputChangeHandler=(event,inputIdentifier)=>
   {
