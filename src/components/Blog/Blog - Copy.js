@@ -3,7 +3,6 @@ import {BrowserRouter,Route,Switch,NavLink} from 'react-router-dom';
 import blogSummaryImport from './BlogForm/BlogSummary';
 import addBlogImport from './AddBlog';
 import logo from '../Images/Image/Karthi.gif';
-import anilogo from '../Images/Image/Karthi.mp4';
 
 const blogSummary =React.lazy(()=>import('./BlogForm/BlogSummary'));
 const addBlog =React.lazy(()=>import('./AddBlog'));
@@ -21,7 +20,11 @@ class Blog extends Component {
       <nav>
           <h2>
           <img src={logo} alt="loading..." />
-          <img src={anilogo} alt="loading..." />
+          <NavLink to="/">Home</NavLink> &nbsp;&nbsp;
+          <NavLink to="/AddBlog">NewBlog</NavLink>&nbsp;&nbsp;
+          <NavLink to="/BlogSummary">BlogSummary</NavLink>&nbsp;&nbsp;
+          <NavLink to="/Posts">Posts</NavLink>&nbsp;&nbsp;
+          <NavLink to="/Users">Users</NavLink>
           </h2>
       </nav>
       </header>
