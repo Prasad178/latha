@@ -21,7 +21,7 @@ class Blog extends Component {
       <header>
       <nav>
           <h2>
-          <video controls autostart autoPlay src={anilogo} type="video/mp4" />
+          <video width="500" height="400" controls autostart autoPlay src={anilogo} type="video/mp4" />
           </h2>
       </nav>
       </header>
