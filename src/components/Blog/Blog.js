@@ -4,7 +4,7 @@ import blogSummaryImport from './BlogForm/BlogSummary';
 import addBlogImport from './AddBlog';
 import logo from '../Images/Image/Karthi.gif';
 import wishes from '../Images/Image/Karthi.jpeg';
-import anilogo from '../Images/Image/SanjivShivaani.mp4';
+import anilogo from '../Images/Image/Karthi.mp4';
 
 const blogSummary =React.lazy(()=>import('./BlogForm/BlogSummary'));
 const addBlog =React.lazy(()=>import('./AddBlog'));
