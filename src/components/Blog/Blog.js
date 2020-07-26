@@ -22,6 +22,7 @@ class Blog extends Component {
           <h2>
           <img src={logo} alt="loading..." />
           <img src={anilogo} alt="loading..." />
+          <Video src={anilogo} type="mp4"/>
           </h2>
       </nav>
       </header>
