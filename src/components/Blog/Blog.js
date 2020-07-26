@@ -3,7 +3,7 @@ import {BrowserRouter,Route,Switch,NavLink} from 'react-router-dom';
 import blogSummaryImport from './BlogForm/BlogSummary';
 import addBlogImport from './AddBlog';
 import logo from '../Images/Image/background1.jpg';
-import wishes from '../Images/Image/Karthi.jpeg';
+import wishes from '../Images/Image/Karthi.gif';
 import anilogo from '../Images/Image/Karthi.mp4';
 
 const blogSummary =React.lazy(()=>import('./BlogForm/BlogSummary'));
@@ -21,7 +21,8 @@ class Blog extends Component {
       <header>
       <nav>
           <h2>
-          <video width="500" height="400" controls autostart autoPlay src={anilogo} type="video/mp4" />
+          <video width="800" height="800" controls autostart autoPlay src={anilogo} type="video/mp4" poster={logo}/>
+          <img src={wishes}/>
           </h2>
       </nav>
       </header>
