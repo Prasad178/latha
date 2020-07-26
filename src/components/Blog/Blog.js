@@ -20,10 +20,11 @@ class Blog extends Component {
       <React.Fragment>
       <header>
       <nav>
+       <div class="center">
           <h2>
-          <video width="800" height="800" controls autostart autoPlay src={anilogo} type="video/mp4" poster={logo}/>
-          <img src={wishes}/>
+          <video width="800" height="800" controls autostart autoPlay src={anilogo} type="video/mp4"/>
           </h2>
+      </div>
       </nav>
       </header>
       <Route path="/"/>
