@@ -20,12 +20,13 @@ class Blog extends Component {
       <React.Fragment>
       <header>
       <nav>
+         <div  styles={{ backgroundImage:`url(${logo})`}}>
           <h2>
           <img src={logo} alt="loading..." />
           <video controls autostart autoPlay src={anilogo} type="video/mp4" />
            <img src={wishes} alt="loading..." />
-          
           </h2>
+        </div>
       </nav>
       </header>
       <Route path="/"/>
