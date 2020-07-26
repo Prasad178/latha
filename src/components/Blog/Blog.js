@@ -2,7 +2,7 @@ import React,{Component,Suspense} from 'react';
 import {BrowserRouter,Route,Switch,NavLink} from 'react-router-dom';
 import blogSummaryImport from './BlogForm/BlogSummary';
 import addBlogImport from './AddBlog';
-import logo from '../Images/Image/Karthi.gif';
+import logo from '../Images/Image/background1.jpg';
 import wishes from '../Images/Image/Karthi.jpeg';
 import anilogo from '../Images/Image/Karthi.mp4';
 
