@@ -18,6 +18,7 @@ class Blog extends Component {
       <header>
       <nav>
           <h2>
+          <img src="./public/Karthi.gif" />
           <NavLink to="/">Home</NavLink> &nbsp;&nbsp;
           <NavLink to="/AddBlog">NewBlog</NavLink>&nbsp;&nbsp;
           <NavLink to="/BlogSummary">BlogSummary</NavLink>&nbsp;&nbsp;

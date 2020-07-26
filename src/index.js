@@ -6,7 +6,7 @@ import Blog from './components/Blog/Blog';
 import * as serviceWorker from './serviceWorker';
 
 //ReactDOM.render(<App  appTitle="Prasad's First React Website"/>, document.getElementById('root'));
-<img src={"./public/Karthi.gif"} />
+
 ReactDOM.render(<Blog/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
