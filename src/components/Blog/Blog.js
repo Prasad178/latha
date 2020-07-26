@@ -20,7 +20,8 @@ class Blog extends Component {
       <React.Fragment>
       <header>
       <nav>
-         <div styles={{ backgroundImage:url(${logo})}}>
+         
+         <div style="background-image: url('../Images/Image/background1.jpg');">
           <h2>
           <video controls autostart autoPlay src={anilogo} type="video/mp4" />
           </h2>
