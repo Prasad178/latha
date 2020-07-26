@@ -2,6 +2,7 @@ import React,{Component,Suspense} from 'react';
 import {BrowserRouter,Route,Switch,NavLink} from 'react-router-dom';
 import blogSummaryImport from './BlogForm/BlogSummary';
 import addBlogImport from './AddBlog';
+import logo from '../Images/Image/Karthi.gif';
 
 const blogSummary =React.lazy(()=>import('./BlogForm/BlogSummary'));
 const addBlog =React.lazy(()=>import('./AddBlog'));
@@ -18,7 +19,7 @@ class Blog extends Component {
       <header>
       <nav>
           <h2>
-          <img src="./Images/Image/Karthi.gif" />
+          <img src={logo} alt="loading..." />
           <NavLink to="/">Home</NavLink> &nbsp;&nbsp;
           <NavLink to="/AddBlog">NewBlog</NavLink>&nbsp;&nbsp;
           <NavLink to="/BlogSummary">BlogSummary</NavLink>&nbsp;&nbsp;
